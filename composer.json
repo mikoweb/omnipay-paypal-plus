@@ -1,0 +1,31 @@
+{
+    "name": "mikoweb/omnipay-paypal-plus",
+    "type": "library",
+    "description": "PayPal Plus gateway for Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "omnipay",
+        "paypal plus"
+    ],
+    "homepage": "https://github.com/mikoweb/omnipay-paypal-plus",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafał Mikołajun",
+            "email": "rafal@mikoweb.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\PayPalPlus\\" : "src/" }
+    },
+    "require": {
+        "php": ">=5.6.4",
+        "omnipay/common": "~2.0"
+    },
+    "suggest": {
+        "omnipay/paypal": "Please add it to your composer.json: 'omnipay/paypal': '~2.0'"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    }
+}
