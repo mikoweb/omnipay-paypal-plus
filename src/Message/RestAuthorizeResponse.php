@@ -99,4 +99,21 @@ class RestAuthorizeResponse extends RestResponse  implements RedirectResponseInt
     {
         return null;
     }
+
+    /**
+     * @param array $parameters
+     *
+     * @return IframeResponse
+     */
+    public function getIframeResponse(array $parameters = [])
+    {
+        $iframe = new IframeResponse(array_merge($parameters, [
+            'approvalUrl' => $this->getRedirectUrl(),
+        ]));
+
+        $params = $this->request->getParameters();
+        $iframe->setSandbox(isset($params['testMode']) ? (bool)$params['testMode'] : false);
+
+        return $iframe;
+    }
 }
