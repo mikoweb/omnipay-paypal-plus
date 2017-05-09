@@ -24,8 +24,5 @@
     "suggest": {
         "omnipay/common": "Please add it to your composer.json: 'omnipay/common': '~2.0'",
         "omnipay/paypal": "Please add it to your composer.json: 'omnipay/paypal': '~2.0'"
-    },
-    "require-dev": {
-        "omnipay/tests": "~2.0"
     }
 }
